@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uk.co.myleskirby.UniProject.consentPage">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="259dp"
+        android:layout_height="180dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/uwelogo" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="giveConsent"
+        android:text="next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92" />
+
+    <CheckBox
+        android:id="@+id/confirmConsent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
+        android:text="I understand and give my consent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="348dp"
+        android:layout_height="265dp"
+        android:text="Thank you for registering an account for the android pattern project 'Bu-Dash', by checking the box below and clicking next you agree to have you data handled securely and stored on Google's 'Firebase' database.\nWhy do we need your email address? We require you to use your email address as a unique identifier in order to be able to log in, it will not be distributed to any 3rd party nor will we send you unnecessary emails. We may send you an email if you request a change in password and to let you know if there is an update in the project that requires your action / attention. You have the right to terminate your account should you wish, please send an email to myles2.kirby@live.uwe.ac.uk for requests or more information."
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.621" />
+
+    <!--
+        <TextView
+            android:id="@+id/Welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thank you for registering an account for the android pattern project 'Bu-Dash', by checking the box below and clicking next you agree to have you data handled securely and stored on Google's 'Firebase' database.\nWhy do we need your email address? We require you to use your email address as a unique identifier in order to be able to log in, it will not be distributed to any 3rd party nor will we send you unnecessary emails. We may send you an email if you request a change in password and to let you know if there is an update in the project that requires your action / attention. You have the right to terminate your account should you wish, please send an email to myles2.kirby@live.uwe.ac.uk for requests or more information."
+            android:textColor="#000000"
+            tools:layout_editor_absoluteX="-1dp"
+            tools:layout_editor_absoluteY="111dp" />
+
+        <ScrollView
+            android:layout_width="409dp"
+            android:layout_height="299dp"
+            android:layout_marginTop="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/nextButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:ut_constraintTop_toBottomOf="@+id/imageView">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical"
+                android:padding="20px"
+                android:scrollbarAlwaysDrawVerticalTrack="false">
+
+
+
+                <TextView
+                    android:id="@+id/the_terms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/agreement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+        </ScrollView>
+        -->
+</androidx.constraintlayout.widget.ConstraintLayout>
